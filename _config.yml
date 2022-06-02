@@ -20,6 +20,12 @@ nav-menu:
 - text: About
   permalink: about
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/pokecode-logo.png
+
 # use false to turn off any social media links
 twitter: false
 facebook: false
