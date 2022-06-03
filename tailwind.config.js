@@ -26,6 +26,20 @@ module.exports = {
             "code::after": false,
             "blockquote p:first-of-type::before": false,
             "blockquote p:last-of-type::after": false,
+            ".fa-metadecidim": {
+              "position": "relative"
+            },
+            ".fa-metadecidim::before": {
+              "backgroundImage": "url(/assets/img/metadecidim.svg)",
+              "backgroundSize": "contain",
+              "height": "1.4em",
+              "width": "1.4em",
+              "content": "' '",
+              "top": "-1em",
+              "left": "-0.7em",
+              "position": "absolute",
+              "display": "block"
+            }
           },
         },
       },
