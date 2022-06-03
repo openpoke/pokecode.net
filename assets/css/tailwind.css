@@ -1236,22 +1236,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
-.prose :where(.fa-metadecidim):not(:where([class~="not-prose"] *)) {
-  position: relative;
-}
-
-.prose :where(.fa-metadecidim):not(:where([class~="not-prose"] *))::before {
-  background-image: url(/assets/img/metadecidim.svg);
-  background-size: contain;
-  height: 1.4em;
-  width: 1.4em;
-  content: ' ';
-  top: -1em;
-  left: -0.7em;
-  position: absolute;
-  display: block;
-}
-
 .prose-stone {
   --tw-prose-body: #44403c;
   --tw-prose-headings: #1c1917;
