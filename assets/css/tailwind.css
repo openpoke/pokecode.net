@@ -1236,6 +1236,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.prose :where(.fa-metadecidim):not(:where([class~="not-prose"] *)) {
+  position: relative;
+}
+
 .prose :where(.fa-metadecidim):not(:where([class~="not-prose"] *))::before {
   background-image: url(/assets/img/metadecidim.svg);
   background-size: contain;
@@ -1246,10 +1250,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -0.7em;
   position: absolute;
   display: block;
-}
-
-.prose :where(.fa-metadecidim):not(:where([class~="not-prose"] *)) {
-  position: relative;
 }
 
 .prose-stone {
@@ -1285,6 +1285,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-invert-th-borders: #57534e;
   --tw-prose-invert-td-borders: #44403c;
+}
+
+.fa-metadecidim {
+  position: relative;
+}
+
+.fa-metadecidim::before {
+  background-image: url(/assets/img/metadecidim.svg);
+  background-size: contain;
+  height: 1.4em;
+  width: 1.4em;
+  content: ' ';
+  top: -1em;
+  left: -0.7em;
+  position: absolute;
+  display: block;
 }
 
 .hover\:bg-indigo-700:hover {
