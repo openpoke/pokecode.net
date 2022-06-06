@@ -19,6 +19,6 @@ The last 4 years has been the CTO of Platoniq Foundation, developing many soluti
 
 ### Pau Parals
 
-With a double degree in Business & Economics, Pau is extremely passionate person about his work, he thrives by delivering solutions that actually works. His commitment with the clients is simply unmatched, you can trust him. His experience goes from being the leader of the students association in Catalonia in his students years to work with Codi Tramuntana and, later, Platoniq Foundation, in both cases dedicated to Decidim.
+Studied a double degree in Business & Economics, Pau is extremely passionate person about his work, he thrives by delivering solutions that actually works. His commitment with the clients is simply unmatched, you can trust him. His experience goes from being the leader of the students association in Catalonia in his students years to work with Codi Tramuntana and, later, Platoniq Foundation, in both cases dedicated to Decidim.
 
 {% include social-media.html twitter="https://twitter.com/paarals" metadecidim="https://meta.decidim.org/profiles/paarals"  email="pau@pokecode.net" metadecidim="https://meta.decidim.org/profiles/paarals" %}
