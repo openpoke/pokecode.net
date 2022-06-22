@@ -1,3 +1,5 @@
+destination: docs/
+
 # change the followings to match your Github username and repo name
 # baseurl: "" # the name of your github repo
 url: "https://pokecode.net" # the url of your github pages
