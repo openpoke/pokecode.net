@@ -9,6 +9,9 @@ description: "Developing Digital democracy and participation based on Decidim an
 # color theme for links
 theme-color: stone # indigo|yellow|pink|green|stone|
 
+languages: ["en", "ca"]
+exclude_from_localizations: ["assets"]
+
 # homepage information
 author: PokeCode
 author-image: pokecode-logo.png  # file must be in the /assets/img/ folder
@@ -19,6 +22,7 @@ show-nav-menu: true
 nav-menu:
 - text: About
   permalink: about
+  namespace: about
 
 defaults:
   - scope:
@@ -46,4 +50,5 @@ google-analytics: false
 
 # jekyll plugins - no need to change
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin

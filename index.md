@@ -1,8 +1,8 @@
 ---
 layout: home
 title: Home
+namespace: home
 permalink: /
 ---
 
-
-Digital Solutions for the democracy of the XXI century, based on [Decidim](https://decidim.org)
+{% translate_file index.md %}
