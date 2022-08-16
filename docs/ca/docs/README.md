@@ -34,6 +34,12 @@ Then point the browser to:
 
 http://localhost:4000
 
+Deploying:
+----------
+
+1. Configure Github to used pages from the "/docs" folder
+2. Run `/.deploy`
+
 Credits:
 -------
 
