@@ -386,7 +386,7 @@ header h4 img {
 }
 .calendari ul li .hora {
   font-size: 0.65em;
-  color: var(--c-primary);
+  color: var(--c-white);
   padding: 0.3em 0.7em;
   border-radius: 1em;
   background-color: var(--c-red);
@@ -404,15 +404,21 @@ header h4 img {
 }
 
 .inscriute {
-  margin-top: 1em;
+  margin-top: 8em;
+}
+.inscriute a {
   position: relative;
   font-size: 4em;
   color: var(--c-primary);
-  padding: 0.6em 1.9em 0.7em 2.2em;
-  border-radius: 1em;
   background-color: var(--c-black);
+  border-radius: 1em;
+  padding: 0.6em 1.9em 0.7em 2.2em;
 }
-.inscriute::before {
+.inscriute a:hover {
+  background-color: var(--c-red);
+  color: white;
+}
+.inscriute a::before {
   content: "";
   position: absolute;
   width: 2.75em;
@@ -422,12 +428,6 @@ header h4 img {
   background: url(../imgs/dit.png) 0 0 no-repeat;
   background-size: cover;
   transform: rotate(19deg);
-}
-.inscriute:hover {
-  background-color: var(--c-red);
-}
-.inscriute:hover > a {
-  color: white;
 }
 
 footer {
