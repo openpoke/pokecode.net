@@ -1214,21 +1214,21 @@ a:active {
   }
 }
 #equip .equip__content {
-  grid-column: 2/-2;
+  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   row-gap: var(--gr-gap);
   margin: 6.4rem auto;
-  max-width: 112rem;
+  width: 100%;
 }
 @media (min-width: 813px) {
   #equip .equip__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: calc(var(--gc-gap) * 1.6);
     grid-column-gap: calc(var(--gc-gap) * 1.6);
-    row-gap: 0;
+    row-gap: calc(var(--gc-gap) * 1.6);
     align-items: start;
   }
 }

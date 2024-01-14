@@ -1219,7 +1219,7 @@ a:active {
   flex-direction: column;
   row-gap: var(--gr-gap);
   margin: 6.4rem auto;
-  max-width: 112rem;
+  width: 100%;
 }
 @media (min-width: 813px) {
   #equip .equip__content {
