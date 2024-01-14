@@ -30,11 +30,11 @@
 		grid-column: 1/-1;
 		@include graella-variable(4, calc(var(--gc-gap) * 1.6), calc(var(--gc-gap) * 1.6));
 		margin: 6.4rem auto;
-		// max-width: 112rem;
 		width: 100%;
 		@media (max-width: $bp-mobile-big) {
 			order: 3;
 			margin-top: 2.4rem;
+			max-width: fit-content;
 		}
 	}
 

@@ -1236,6 +1236,8 @@ a:active {
   #equip .equip__content {
     order: 3;
     margin-top: 2.4rem;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 #equip .card-equip {
