@@ -27,8 +27,8 @@
 	}
 
 	.equip__content {
-		grid-column: 2/-2;
-		@include graella-variable(3, calc(var(--gc-gap) * 1.6), 0);
+		grid-column: 1/-1;
+		@include graella-variable(4, calc(var(--gc-gap) * 1.6), calc(var(--gc-gap) * 1.6));
 		margin: 6.4rem auto;
 		max-width: 112rem;
 		@media (max-width: $bp-mobile-big) {
