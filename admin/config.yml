@@ -27,6 +27,15 @@ collections:
       - { label: "Metadecidim", name: "metadecidim", widget: "string", required: false }
       - { label: "Avatar", name: "avatar", widget: "image"}
       - { label: "Image", name: "image", widget: "image"}
+  - name: "clients"
+    label: "Clients"
+    folder: "_clients"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Alt Text", name: "alt", widget: "string" }
+      - { label: "Url", name: "url", widget: "string" }
   - name: "stories"
     label: "Client Stories"
     folder: "_stories"
