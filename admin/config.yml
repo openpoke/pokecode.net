@@ -18,7 +18,6 @@ collections:
     folder: "_team"
     create: true
     i18n: true
-    slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Position", name: "position", widget: "string", i18n: true }
@@ -28,3 +27,15 @@ collections:
       - { label: "Metadecidim", name: "metadecidim", widget: "string", required: false }
       - { label: "Avatar", name: "avatar", widget: "image"}
       - { label: "Image", name: "image", widget: "image"}
+  - name: "stories"
+    label: "Client Stories"
+    folder: "_stories"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string", i18n: true }
+      - { label: "Organization", name: "organization", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Logo", name: "logo", widget: "image", required: false }
+      - { label: "Testimonial", name: "testimonial", widget: "markdown", i18n: true }
