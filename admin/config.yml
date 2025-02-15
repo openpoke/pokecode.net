@@ -48,3 +48,12 @@ collections:
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Logo", name: "logo", widget: "image", required: false }
       - { label: "Testimonial", name: "testimonial", widget: "markdown", i18n: true }
+  - name: "services"
+    label: "Services"
+    folder: "_services"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true}
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", i18n: true }
