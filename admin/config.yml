@@ -2,14 +2,29 @@
 
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
 local_backend: true
 
+i18n:
+  structure: multiple_folders
+  locales: [ca, es, en]
+  default_locale: ca
+
 media_folder: 'assets/img'
 collections:
-  - name: 'members'
-    label: 'Members'
-    folder: '_members/'
+  - name: "team"
+    label: "Team members"
+    folder: "_team"
+    create: true
+    i18n: true
+    slug: "{{slug}}"
     fields:
-      - { name: Title }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string", i18n: true }
+      - { label: "Level", name: "level", widget: "string" }
+      - { label: "Twitter", name: "twitter", widget: "string", required: false }
+      - { label: "GitHub", name: "github", widget: "string", required: false }
+      - { label: "Metadecidim", name: "metadecidim", widget: "string", required: false }
+      - { label: "Avatar", name: "avatar", widget: "image"}
+      - { label: "Image", name: "image", widget: "image"}

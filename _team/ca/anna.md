@@ -1,10 +1,10 @@
 ---
-name: Anna Topalidi
+name: Anna Topalidiaaaa
 position: Ruby on Rails Developer
 level: LV2
-twitter: 
+twitter: null
 github: https://github.com/antopalidi
-metadecidim: 
+metadecidim: null
 avatar: imgs/avatar_anna.png
 image: imgs/anna.png
 ---
