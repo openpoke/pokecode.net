@@ -5,6 +5,7 @@ level: LV0
 twitter: 
 github: https://github.com/ElviaBth
 metadecidim: https://meta.decidim.org/profiles/ElviaBth/activity
-avatar: imgs/avatar_elvia.png
-image: imgs/elvia.png
+avatar: /assets/img/avatar_elvia.png
+image: /assets/img/elvia.png
+order: 4
 ---

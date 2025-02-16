@@ -5,6 +5,6 @@ level: LV2
 twitter: null
 github: https://github.com/antopalidi
 metadecidim: null
-avatar: imgs/avatar_anna.png
-image: imgs/anna.png
+avatar: /assets/img/avatar_anna.png
+image: /assets/img/anna.png
 ---
