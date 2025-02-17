@@ -1,5 +1,28 @@
 ca: CA
 en: EN
+es: ES
 pages:
   home: Inicio 
   about: Quienes somos 
+home:
+  hero: 
+    title: Soluciones técnicas para requisitos democráticos
+    partner:
+      number: 1st
+      text: Partner Oficial de
+  services:
+    title: Servicios 
+    description:  "Creamos aplicaciones basadas en el software Decidim* y Ruby on Rails. Nuestras especialidades son:"
+    note: "* El 3% de cada presupuesto por servicios Decidim se da a la Asociación Decidim por el mantenimiento oficial del proyecto."
+  clients:
+    title: "Clientes"
+    description: "Colaboramos con **instituciones públicas**, **cooperativas**, **movimientos sociales** y otras **organizaciones con comunidad**."
+    say_about_us: "Nuestros clientes dicen de nosotros.."
+  footer:
+    address: Carrer Concepció Arenal \n 08027 Barcelona
+    phone: +34 663 191 025
+    follow: Segueix-nos
+    legal: 2023 PokeCode. Made with ❤️ by PokeCode
+  team:
+    title: "Equipo"
+    description: "Por que detrás hay personas que te ayudaremos en tot lo que necesites. Mira nuestra Pokedex!"
