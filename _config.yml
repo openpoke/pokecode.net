@@ -12,7 +12,7 @@ description: "Developing Digital democracy and participation based on Decidim an
 theme-color: stone # indigo|yellow|pink|green|stone|
 
 languages: ["ca", "en", "es"]
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["assets", "docs"]
 
 # homepage information
 author: PokeCode
@@ -54,3 +54,14 @@ google-analytics: false
 plugins:
   - jekyll-seo-tag
   - jekyll-multiple-languages-plugin
+
+collections:
+  team:
+    output: false
+  services:
+    output: false
+  clients:
+    output: false
+  stories:
+    output: false
+
