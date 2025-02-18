@@ -2,8 +2,10 @@
 name: John Willson
 position: Co-President del Fons GPC
 organization: Green Party Canada
-image: /assets/imgs/clients/green_color.svg
-logo: img/clients/green_color.svg
+image: /assets/img/clients/green_color.svg
+logo: /assets/img/clients/green_color.svg
+order: 4
+lang: ca
 testimonial: |
   Com a responsable de producte en telecomunicacions, he gestionat el desenvolupament de programari per
   part d'equips als Estats Units, el Regne Unit, Alemanya, Israel i la Xina. Pokecode sempre compleix o
