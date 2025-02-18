@@ -1,23 +1,23 @@
 @font-face {
 	font-family: "Söhne";
-	src: url("../fonts/soehne-buch.ttf") format("ttf"), url("../fonts/soehne-buch.eot") format("eot"),
-		url("../fonts/soehne-buch.woff") format("woff"), url("../fonts/soehne-buch.woff2") format("woff2"),
-		url("../fonts/soehne-buch.svg") format("svg");
+	src: url("/assets/fonts/soehne-buch.ttf") format("ttf"), url("/assets/fonts/soehne-buch.eot") format("eot"),
+		url("/assets/fonts/soehne-buch.woff") format("woff"), url("/assets/fonts/soehne-buch.woff2") format("woff2"),
+		url("/assets/fonts/soehne-buch.svg") format("svg");
 }
 
 @font-face {
 	font-family: "SöhneBreit";
-	src: url("../fonts/soehne-breit-dreiviertelfett.ttf") format("ttf"),
-		url("../fonts/soehne-breit-dreiviertelfett.eot") format("eot"),
-		url("../fonts/soehne-breit-dreiviertelfett.woff") format("woff"),
-		url("../fonts/soehne-breit-dreiviertelfett.woff2") format("woff2"),
-		url("../fonts/soehne-breit-dreiviertelfett.svg") format("svg");
+	src: url("/assets/fonts/soehne-breit-dreiviertelfett.ttf") format("ttf"),
+		url("/assets/fonts/soehne-breit-dreiviertelfett.eot") format("eot"),
+		url("/assets/fonts/soehne-breit-dreiviertelfett.woff") format("woff"),
+		url("/assets/fonts/soehne-breit-dreiviertelfett.woff2") format("woff2"),
+		url("/assets/fonts/soehne-breit-dreiviertelfett.svg") format("svg");
 }
 
 @font-face {
 	font-family: "pokecode";
-	src: url("../fonts/pokecode.ttf?hjasg") format("truetype"), url("../fonts/pokecode.woff?hjasg") format("woff"),
-		url("../fonts/pokecode.svg?hjasg#pokecode") format("svg");
+	src: url("/assets/fonts/pokecode.ttf?hjasg") format("truetype"), url("/assets/fonts/pokecode.woff?hjasg") format("woff"),
+		url("/assets/fonts/pokecode.svg?hjasg#pokecode") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
