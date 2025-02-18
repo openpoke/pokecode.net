@@ -1,5 +1,6 @@
 ---
 name: "PEMB"
-image: "/imgs/clients/pemb.svg"
+image: "/assets/img/clients/pemb.svg"
 alt: "PEMB"
+order: 9
 ---

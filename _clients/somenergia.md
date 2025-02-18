@@ -1,6 +1,7 @@
 ---
 name: "Som Energia"
-image: "/imgs/clients/somenergia.svg"
+image: "/assets/img/clients/somenergia.svg"
 alt: "Som Energia"
+order: 4
 ---
 

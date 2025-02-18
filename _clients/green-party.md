@@ -1,5 +1,6 @@
 ---
 name: "Green Party of Canada"
-image: "/imgs/clients/green.svg"
+image: "/assets/img/clients/green.svg"
 alt: "Green Party of Canada"
+order: 11
 ---

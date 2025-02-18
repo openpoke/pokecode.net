@@ -1,5 +1,6 @@
 ---
 name: "Seidor Opentrends"
-image: "/imgs/clients/seidor.svg"
+image: "/assets/img/clients/seidor.svg"
 alt: "Seidor Opentrends"
+order: 13
 ---

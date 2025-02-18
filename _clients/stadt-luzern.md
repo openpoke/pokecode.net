@@ -1,6 +1,7 @@
 ---
 name: "Stadt of Luzern"
-image: "/imgs/clients/statzofluzern.svg"
+image: "/assets/img/clients/statzofluzern.svg"
 alt: "Stadt of Luzern"
+order: 5
 ---
 

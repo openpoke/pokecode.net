@@ -1,5 +1,6 @@
 ---
 name: "Ajuntament de Barcelona"
-image: "/imgs/clients/ajuntamentbcn.svg"
+image: "/assets/img/clients/ajuntamentbcn.svg"
 alt: "Ajuntament de Barcelona"
+order: 14
 ---

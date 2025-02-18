@@ -1,5 +1,6 @@
 ---
 name: "OpensourcePolitics"
-image: "/imgs/clients/opensource.svg"
+image: "/assets/img/clients/opensource.svg"
 alt: "OpensourcePolitics"
+order: 12
 ---

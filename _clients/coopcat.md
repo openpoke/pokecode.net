@@ -1,6 +1,7 @@
 ---
 name: "Coopcat"
-image: "/imgs/clients/coopcat.svg"
+image: "/assets/img/clients/coopcat.svg"
 alt: "Coopcat"
+order: 6
 ---
 

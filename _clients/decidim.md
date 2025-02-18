@@ -1,6 +1,7 @@
 ---
 name: "Decidim"
-image: "/imgs/clients/decidim.svg"
+image: "/assets/img/clients/decidim.svg"
 alt: "Decidim"
+order: 8
 ---
 
