@@ -1,4 +1,4 @@
-destination: docs/
+destination: _site/
 
 # change the followings to match your Github username and repo name
 # baseurl: "" # the name of your github repo
@@ -11,8 +11,8 @@ description: "Developing Digital democracy and participation based on Decidim an
 # color theme for links
 theme-color: stone # indigo|yellow|pink|green|stone|
 
-languages: ["en", "ca"]
-exclude_from_localizations: ["assets"]
+languages: ["ca", "en", "es"]
+exclude_from_localizations: ["assets", "docs"]
 
 # homepage information
 author: PokeCode
@@ -54,3 +54,14 @@ google-analytics: false
 plugins:
   - jekyll-seo-tag
   - jekyll-multiple-languages-plugin
+
+collections:
+  team:
+    output: false
+  services:
+    output: false
+  clients:
+    output: false
+  stories:
+    output: false
+

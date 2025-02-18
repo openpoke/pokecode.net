@@ -1,0 +1,90 @@
+{% assign services = site.services | where: "lang", site.lang | sort: "order" %}
+{% assign team = site.team | where: "locale", site.lang | sort: "order" %}
+<section id="serveis" class="modul serveis">
+  <!-- Contingut del modul -->
+  <div class="modul__grid">
+    <header class="modul__header">
+      <h2>{% t home.services.title %}</h2>
+      <p>
+        <!--
+We create applications based on
+<span class="destecat">Decidim software<span class="asterisc">*</span></span> and
+<span class="destecat">Ruby on Rails</span>. Our specialties are:
+-->
+        {% t home.services.description %}
+      </p>
+    </header>
+    <p class="small">
+      <!--
+<span class="asterisc">*</span> 3% of each budget for Decidim services is given to the Decidim Association for
+the official maintenance of the project.
+-->
+      {% t home.services.note %}
+    </p>
+    <div id="slider-serveis" class="modul__content--slider">
+      <!-- Add Arrows & Pagination -->
+      <div class="swiper-navigation">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <span class="icon medium icon-arrow--left"></span><span class="icon small icon-arrow--left"></span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="icon medium icon-arrow--right"></span><span class="icon small icon-arrow--right"></span>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="cards serveis swiper-wrapper">
+      {% for service in services %}
+        <div class="card swiper-slide">
+          <div class="card__imatge">
+            <img src="{{ service.image }}" alt="{{ service.title }}" />
+          </div>
+
+          <h3 class="card__titol">{{ service.title }}</h3>
+          <p class="card__text">
+            {{ service.description }}
+          </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script>
+window.addEventListener("load", () => {
+  const swiper = new Swiper("#slider-serveis", {
+    autoplay: false,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 32,
+      },
+    },
+  });
+});
+</script>
+

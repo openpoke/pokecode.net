@@ -1,0 +1,67 @@
+# config.yml
+
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+i18n:
+  structure: multiple_folders
+  locales: [ca, es, en]
+  default_locale: ca
+
+media_folder: 'assets/img'
+collections:
+  - name: "team"
+    label: "Team members"
+    folder: "_team"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Name", name: "name", widget: "string", i18n: duplicate }
+      - { label: "Position", name: "position", widget: "string", i18n: true }
+      - { label: "Level", name: "level", widget: "string", i18n: duplicate }
+      - { label: "Twitter", name: "twitter", widget: "string", i18n: duplicate, required: false }
+      - { label: "GitHub", name: "github", widget: "string", i18n: duplicate, required: false }
+      - { label: "Metadecidim", name: "metadecidim", widget: "string", i18n: duplicate, required: false }
+      - { label: "Avatar", name: "avatar", widget: "image", i18n: duplicate }
+      - { label: "Image", name: "image", widget: "image", i18n: duplicate }
+      - { label: "Order", name: order, widget: "number", i18n: duplicate }
+      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+  - name: "clients"
+    label: "Clients"
+    folder: "_clients"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string", i18n: duplicate }
+      - { label: "Image", name: "image", widget: "image", i18n: duplicate  }
+      - { label: "Alt Text", name: "alt", widget: "string", i18n: duplicate }
+      - { label: "Url", name: "url", widget: "string", i18n: duplicate }
+      - { label: "Order", name: order, widget: "number", i18n: duplicate }
+      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+  - name: "stories"
+    label: "Client Stories"
+    folder: "_stories"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string", i18n: true }
+      - { label: "Organization", name: "organization", widget: "string", i18n: duplicate }
+      - { label: "Image", name: "image", widget: "image", i18n: duplicate, required: false }
+      - { label: "Logo", name: "logo", widget: "image", i18n: duplicate, required: false }
+      - { label: "Testimonial", name: "testimonial", widget: "markdown", i18n: true }
+      - { label: "Order", name: order, widget: "number", i18n: duplicate }
+      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+  - name: "services"
+    label: "Services"
+    folder: "_services"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true}
+      - { label: "Image", name: "image", widget: "image", i18n: duplicate }
+      - { label: "Description", name: "description", widget: "text", i18n: true }
+      - { label: "Order", name: order, widget: "number", i18n: duplicate }
+      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }

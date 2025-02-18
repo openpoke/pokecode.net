@@ -1,0 +1,103 @@
+{% assign clients = site.clients | sort: "order" %}
+{% assign stories = site.stories | where: "lang", site.lang | sort: "order" %}
+<section id="clients" class="modul clients">
+  <!-- Contingut del modul -->
+  <div class="modul__grid">
+    <div class="clients__img"><img src="/assets/img/clients.png" alt="" /></div>
+    <header class="modul__header clients__header">
+      <h2>{% t home.clients.title %}</h2>
+      <p>
+        <!--
+We collaborate with <span class="destecat--negatiu">public institutions</span>,
+<span class="destecat--negatiu">cooperatives</span>,
+<span class="destecat--negatiu">social movements</span> and other
+<span class="destecat--negatiu">community organizations</span>.
+-->
+        {% t home.clients.description %}
+      </p>
+    </header>
+    <div class="clients__logos">
+      <div class="clients__logos__container">
+        {% for client in clients %}
+        <img
+          src="{{ client.image }}"
+          title="{{ client.name }}"
+          alt="{{ client.alt }}"
+        />
+        {% endfor %}
+     </div>
+    </div>
+    <div class="modul__header clients__header-2">
+      <p>{% t home.clients.say_about_us %}</p>
+    </div>
+    <div id="slider-clients" class="modul__content--slider clients__slider">
+      <!-- Add Arrows & Pagination -->
+      <div class="swiper-navigation">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <span class="icon medium icon-arrow--left"></span><span class="icon small icon-arrow--left"></span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="icon medium icon-arrow--right"></span><span class="icon small icon-arrow--right"></span>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="cards-clients swiper-wrapper">
+        {% for story in stories %}
+        <div class="card-comentari swiper-slide">
+          <div class="card-comentari__avatar">
+            <div class="card-comentari__imatge"><img src="{{ story.image }}" alt="" /></div>
+            <div class="card-comentari__box">
+              <h3 class="card-comentari__nom">{{ story.name }}</h3>
+              <h4 class="card-comentari__carrec">{{ story.organization }}</h4>
+            </div>
+          </div>
+          <div class="card-comentari__text">
+            <p>
+              {{ story.testimonial | markdownify }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+     </div>
+    </div>
+  </div>
+</section>
+<script>
+window.addEventListener("load", () => {
+  const swiper = new Swiper("#slider-clients", {
+    autoplay: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 32,
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 32,
+      },
+      1440: {
+        slidesPerView: 1,
+        spaceBetween: 32,
+      },
+      1920: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+    },
+  });
+});
+</script>
