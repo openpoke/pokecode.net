@@ -1,3 +1,5 @@
+{% assign services = site.services | where: "lang", site.lang | sort: "order" %}
+{% assign team = site.team | where: "locale", site.lang | sort: "order" %}
 <section id="serveis" class="modul serveis">
   <!-- Contingut del modul -->
   <div class="modul__grid">
@@ -32,61 +34,18 @@ the official maintenance of the project.
       </div>
       <!-- Cards -->
       <div class="cards serveis swiper-wrapper">
+      {% for service in services %}
         <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/installacio.png" alt="" /></div>
+          <div class="card__imatge">
+            <img src="{{ service.image }}" alt="{{ service.title }}" />
+          </div>
 
-          <h3 class="card__titol">Quick installation</h3>
+          <h3 class="card__titol">{{ service.title }}</h3>
           <p class="card__text">
-            We guarantee a fast and secure installation on our server or on your hosting. A test environment and a
-            production environment are provided
+            {{ service.description }}
           </p>
-        </div>
-        <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/max_adaptacio.png" alt="" /></div>
-
-          <h3 class="card__titol">Adaptability at the highest level</h3>
-          <p class="card__text">
-            We adapt, improve and develop the registration system, verification and participation modules based on
-            the needs of each type of organization
-          </p>
-        </div>
-        <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/experiencia.png" alt="" /></div>
-
-          <h3 class="card__titol">Unique experience</h3>
-          <p class="card__text">
-            Your Decidim, your look and feel. Your Decidim, your priorities. With our Agile methodology you will
-            participate in the evolution of the project
-          </p>
-        </div>
-        <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/creadors.png" alt="" /></div>
-
-          <h3 class="card__titol">Creators of Decidim Awesome</h3>
-          <p class="card__text">
-            Our priority is always to make Decidim more usable and give more flexibility to the administrator. The
-            ever-evolving Swiss army knife that every platform admin needs
-          </p>
-        </div>
-        <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/suport.png" alt="" /></div>
-
-          <h3 class="card__titol">Technical support and personalized consulting</h3>
-          <p class="card__text">
-            Our values are: work with quality, treat the team well and treat the customer well. We don't like to talk
-            with technical vocabulary, but we do love to transform political challenges into technological solutions!
-          </p>
-        </div>
-        <div class="card swiper-slide">
-          <div class="card__imatge"><img src="/assets/img/comunitat.png" alt="" /></div>
-
-          <h3 class="card__titol">International Community</h3>
-          <p class="card__text">
-            Welcome to open source! We share and cooperate with other organizations in the community. We are
-            promoters of the international network of suppliers Decidim: DICE
-          </p>
-        </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>

@@ -1,0 +1,47 @@
+{% assign team = site.team | where: "locale", site.lang | sort: "order" %}
+<section id="equip" class="modul equip">
+  <!-- Contingut del modul -->
+  <div class="modul__grid">
+    <header class="modul__header equip__header">
+      <h2>{% t home.team.title %}</h2>
+      <!--
+      <p>Because there are people behind you who will help you with everything you need.</p>
+      <p>Check out our <span class="destecat">Pokecodex!</span></p>
+      -->
+      <p> {% t home.team.description %}</p>
+    </header>
+    <div class="equip__img"><img src="/assets/img/gos.png" alt="" /></div>
+    <div class="modul__content equip__content">
+      {% for member in team %}
+      <div class="card-equip">
+        <div class="card-equip__box-level">
+          <div class="card-equip__num">#{{ forloop.index }}</div>
+          <div class="card-equip__level">{{ member.level }}</div>
+        </div>
+        <div class="card-equip__img">
+          <img src="{{ member.image }}" title="{{ member.name }}" alt="{{ member.name }}" />
+        </div>
+        <div class="card-equip__box-dades">
+          <div class="card-equip__avatar">
+            <img src="{{ member.avatar }}" title="{{ member.name }}" alt="{{ member.name }}" />
+          </div>
+          <div class="card-equip__nom">{{ member.name }}</div>
+          <div class="card-equip__carrec">{{ member.position }}</div>
+          <div class="card-equip__xarxes">
+            {% if member.twitter %}
+            <a href="{{ member.twitter }}" target="_blank"><span class="icon icon-twitter"></span></a>
+            {% endif %}
+            {% if member.github %}
+            <a href="{{ member.github }}" target="_blank"><span class="icon icon-github"></span></a>
+            {% endif %}
+            {% if member.metadecidim %}
+            <a href="{{ member.metadecidim }}" target="_blank"><span class="icon icon-decidim-ico"></span></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
