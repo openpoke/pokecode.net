@@ -12,17 +12,17 @@ home:
       text: Official Partner of 
   services:
     title: Services
-    description: "We create applications based on Decidim software and Ruby on Rails. Our specialties are:"
+    description: We create applications based on <span class="destecat">Decidim*</span> software and <span class="destecat">Ruby on Rails</span>. Our specialties are:"
     note: "3% of each budget for Decidim services is given to the Decidim Association for the official maintenance of the project."
   clients:
     title: "Clients"
-    description: "We collaborate with public institutions, cooperatives, social movements and other community organizations."
+    description: We collaborate with <span class="destecat--negatiu">public institutions</span>, <span class="destecat--negatiu">cooperatives</span>, <span class="destecat--negatiu">social movements</span> and other <span class="destecat--negatiu">community organizations</span>."
     say_about_us: "Our customers say about us..."
   footer:
-    address: Carrer Concepció Arenal \n 08027 Barcelona
+    address: Carrer Concepció Arenal <br> 08027 Barcelona
     phone: +34 663 191 025
     follow: Follow us
     legal: 2023 PokeCode. Made with ❤️ by PokeCode
   team:
     title: "Team"
-    description: "Per què darrera hi ha persones que t’ajudarem amb tot allò que necessites. Mira la nostra Pokecodex!"
+    description: "Because behind there are people who will help you with everything you need.<br><br> Check out our <span class=\"destecat\">Pokecodex!</span>"
