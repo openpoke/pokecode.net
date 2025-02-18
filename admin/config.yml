@@ -13,6 +13,15 @@ i18n:
 
 media_folder: 'assets/img'
 collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages"
+    create: true
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default", i18n: duplicate }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - { label: "Title", name: "title", widget: "string", i18n: translate }
+      - { label: "Content", name: "body", widget: "markdown", i18n: true }
   - name: "team"
     label: "Team members"
     folder: "_team"

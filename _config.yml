@@ -56,6 +56,8 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 collections:
+  pages:
+    output: true
   team:
     output: false
   services:
