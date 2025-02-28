@@ -2,7 +2,7 @@
 
 backend:
   name: github
-  branch: davidbeig/pokecode.net
+  repo: davidbeig/pokecode.net
 
 local_backend: true
 
