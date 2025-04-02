@@ -1,7 +1,7 @@
 ---
 name: Anna Topalidi
 position: Ruby on Rails Developer
-level: LV3
+level: LV2
 twitter: null
 github: https://github.com/antopalidi
 avatar: /assets/img/avatar_anna.png
