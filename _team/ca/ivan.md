@@ -1,12 +1,12 @@
 ---
 name: Ivan Vergés
 position: Cofundador
-level: LV2
+level: LV3
 twitter: https://twitter.com/ivanverges
 github: https://github.com/microstudi
-metadecidim: https://meta.decidim.org/profiles/microstudi/activity?locale=ca
 avatar: /assets/img/avatar_ivan.png
-image: /assets/img/ivan.png
 order: 1
-locale: "ca"
+locale: ca
+metadecidim: https://meta.decidim.org/profiles/microstudi/activity?locale=ca
+image: /assets/img/ivan.png
 ---
