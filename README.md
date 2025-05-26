@@ -34,6 +34,10 @@ Then point the browser to:
 
 http://localhost:4000
 
+To work with the CMS you have to execute:
+
+`npx decap-server`
+
 Deploying:
 ----------
 
