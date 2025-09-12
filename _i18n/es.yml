@@ -13,7 +13,7 @@ home:
   services:
     title: Servicios 
     description: Creamos aplicaciones basadas en el software <span class="destecat">Decidim*</span> y <span class="destecat">Ruby on Rails</span>. Nuestras especialidades son:"
-    note: "* El 3% de cada presupuesto por servicios Decidim se da a la Asociación Decidim por el mantenimiento oficial del proyecto."
+    note: "<span class=\"asterisc\">*</span> El 3% de cada presupuesto por servicios Decidim se da a la Asociación Decidim por el mantenimiento oficial del proyecto."
   clients:
     title: "Clientes"
     description: Colaboramos con <span class="destecat--negatiu">instituciones públicas</span>, <span class="destecat--negatiu">cooperativas</span>, <span class="destecat--negatiu">movimientos sociales</span> y otras <span class="destecat--negatiu">organizaciones con comunidad</span>."
