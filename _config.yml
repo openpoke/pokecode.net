@@ -16,7 +16,7 @@ exclude_from_localizations: ["assets", "docs"]
 
 # homepage information
 author: PokeCode
-author-image: pokecode-logo.png  # file must be in the /assets/img/ folder
+author-image: pokecode-logo.webp  # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
@@ -30,7 +30,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/seo-pokecode-logo.png
+      image: /assets/img/seo-pokecode-logo.webp
 
 # use false to turn off any social media links
 twitter: false
