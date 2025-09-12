@@ -425,7 +425,7 @@ header h4 img {
   height: 100%;
   left: -0.7em;
   top: -0.8em;
-  background: url(../imgs/dit.png) 0 0 no-repeat;
+  background: url(../imgs/dit.webp) 0 0 no-repeat;
   background-size: cover;
   transform: rotate(19deg);
 }
