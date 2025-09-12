@@ -10,77 +10,38 @@
       -->
       <p> {% t home.team.description %}</p>
     </header>
-    <div class="equip__img"><img src="/assets/img/gos.png" alt="" /></div>
-    <div id="slider-team" class="modul__content equip__content">
-      <div class="swiper-wrapper">
-        {% for member in team %}
-        <div class="card-equip swiper-slide">
-          <div class="card-equip__box-level">
-            <div class="card-equip__num">#{{ forloop.index }}</div>
-            <div class="card-equip__level">{{ member.level }}</div>
+    <div class="equip__img"><img src="/assets/img/gos.webp" role="presentation" alt="Billie. Our dog." /></div>
+    <div class="modul__content equip__content">
+      {% for member in team %}
+      <div class="card-equip">
+        <div class="card-equip__box-level">
+          <div class="card-equip__num">#{{ forloop.index }}</div>
+          <div class="card-equip__level">{{ member.level }}</div>
+        </div>
+        <div class="card-equip__img">
+          <img src="{{ member.image }}" title="{{ member.name }}" alt="{{ member.name }}" />
+        </div>
+        <div class="card-equip__box-dades">
+          <div class="card-equip__avatar">
+            <img src="{{ member.avatar }}" title="{{ member.name }}" alt="{{ member.name }}" />
           </div>
-          <div class="card-equip__img">
-            <img src="{{ member.image }}" title="{{ member.name }}" alt="{{ member.name }}" />
-          </div>
-          <div class="card-equip__box-dades">
-            <div class="card-equip__avatar">
-              <img src="{{ member.avatar }}" title="{{ member.name }}" alt="{{ member.name }}" />
-            </div>
-            <div class="card-equip__nom">{{ member.name }}</div>
-            <div class="card-equip__carrec">{{ member.position }}</div>
-            <div class="card-equip__xarxes">
-              {% if member.twitter %}
-              <a href="{{ member.twitter }}" target="_blank"><span class="icon icon-twitter"></span></a>
-              {% endif %}
-              {% if member.github %}
-              <a href="{{ member.github }}" target="_blank"><span class="icon icon-github"></span></a>
-              {% endif %}
-              {% if member.metadecidim %}
-              <a href="{{ member.metadecidim }}" target="_blank"><span class="icon icon-decidim-ico"></span></a>
-              {% endif %}
-            </div>
+          <div class="card-equip__nom">{{ member.name }}</div>
+          <div class="card-equip__carrec">{{ member.position }}</div>
+          <div class="card-equip__xarxes">
+            {% if member.twitter %}
+            <a href="{{ member.twitter }}" title="twitter" target="_blank"><span class="icon icon-twitter"></span></a>
+            {% endif %}
+            {% if member.github %}
+            <a href="{{ member.github }}" title="github" target="_blank"><span class="icon icon-github"></span></a>
+            {% endif %}
+            {% if member.metadecidim %}
+            <a href="{{ member.metadecidim }}" title="metadecidim" target="_blank"><span class="icon icon-decidim-ico"></span></a>
+            {% endif %}
           </div>
         </div>
-        {% endfor %}
       </div>
+      {% endfor %}
+
     </div>
   </div>
 </section>
-<script>
-window.addEventListener("load", () => {
-  const swiper = new Swiper("#slider-team", {
-    autoplay: false,
-    loop: false,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 2.2,
-        spaceBetween: 32,
-      },
-      1024: {
-        slidesPerView: 2.2,
-        spaceBetween: 32,
-      },
-      1440: {
-        slidesPerView: 3.2,
-        spaceBetween: 32,
-      },
-      1920: {
-        slidesPerView: 4.1,
-        spaceBetween: 32,
-      },
-    },
-  });
-});
-</script>

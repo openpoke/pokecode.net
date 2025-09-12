@@ -1220,11 +1220,29 @@ a:active {
   row-gap: var(--gr-gap);
   margin: 6.4rem auto;
   width: 100%;
+  order: 3;
 }
-@media (min-width: 813px) {
+
+@media (min-width: 640px) {
   #equip .equip__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: calc(var(--gc-gap) * 1.6);
+    grid-column-gap: calc(var(--gc-gap) * 1.6);
+    row-gap: calc(var(--gc-gap) * 1.6);
+    align-items: start;
+
+    margin-top: 2.4rem;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+
+@media (min-width: 768px) {
+  #equip .equip__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: calc(var(--gc-gap) * 1.6);
     grid-column-gap: calc(var(--gc-gap) * 1.6);
@@ -1232,14 +1250,7 @@ a:active {
     align-items: start;
   }
 }
-@media (max-width: 812px) {
-  #equip .equip__content {
-    order: 3;
-    margin-top: 2.4rem;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-  }
-}
+
 #equip .card-equip {
   position: relative;
   border-radius: 0.8rem;
@@ -1249,6 +1260,7 @@ a:active {
 @media (max-width: 812px) {
   #equip .card-equip {
     max-width: 75vw;
+    margin: auto;
   }
   #equip .card-equip:not(:last-of-type) {
     margin-bottom: 2.4rem;
