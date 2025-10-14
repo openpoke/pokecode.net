@@ -74,3 +74,15 @@ collections:
       - { label: "Description", name: "description", widget: "text", i18n: true }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
       - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_blog"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", i18n: duplicate }
+      - { label: "Image", name: " image", widget: "image", i18n: duplicate, required: false }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
