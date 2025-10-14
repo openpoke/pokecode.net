@@ -88,9 +88,9 @@ collections:
       - { label: "Last Updated", name: "last_updated", widget: "datetime", required: false }
       - { label: "Categories", name: "category", widget: "list", i18n: true }
       - { label: "Tags", name: "tags", widget: "list", i18n: true, required: false }
-      - { label: "Image", name: " image", widget: "image", i18n: duplicate, required: false }
+      - { label: "Image", name: "image", widget: "image", i18n: duplicate, required: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+      - { label: "Language", name: "lang", widget: "hidden", default: "ca", i18n: "duplicate" }
       - { label: Reading time (minutes)", name: "reading_time", widget: "number", i18n: duplicate, required: false }
       - { label: "Comments enabled", name: "comments_enabled", widget: "boolean", default: false }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }

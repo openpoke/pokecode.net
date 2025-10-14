@@ -4,6 +4,7 @@ subtitle: Com fer un blog amb Jekyll
 author: Elvia
 date: 2025-10-14T16:12:00.000+02:00
 last_updated: 2025-10-14T16:12:00.000+02:00
+lang: ca
 category:
   - "[tutoriales"
   - desarrollo]
@@ -17,4 +18,4 @@ reading_time: 1
 comments_enabled: true
 order: 1
 ---
-Faras un blog modern...
+Faras un blog modern...El teu Decidim, la teva imatge. El teu Decidim, les teves prioritats. Amb la nostra metodologia Agile participaràs de l’evolució del projecte.
