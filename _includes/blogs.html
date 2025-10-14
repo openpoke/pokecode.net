@@ -1,14 +1,25 @@
-{% assign blogs = site.blogs | where: "locale", site.lang | sort: "order" %}
-<section id="blogs" class="modul blogs">
+{% assign blogs = site.blogs | where: "lang", site.lang | sort: "order" %}
+<section id="blogs" class="modul equip">
   <!-- Contingut del modul -->
   <div class="modul__grid">
     <header class="modul__header blogs__header">
       <h2>{% t home.blogs.title %}</h2>
       <p>{% t home.blogs.description %}</p>
     </header>
-    <div class="modul__content">
+    <div class="modul__content equip__content">
       {% for blog in blogs %}
-
+        <div class="card-blog">
+            <div class="card-blog__img">
+            <img src="{{ blog.image }}" alt="{{ blog.title }}" />
+            </div>
+            <div class="card-blog__content">
+            <h3 class="card-blog__title">{{ blog.title }}</h3>
+            <p class="card-blog__text">
+                {{ blog.body }}
+            </p>
+            <a href="#" class="card-blog__link">{% t home.blogs.read_more %}</a>
+            </div>
+        </div>
       {% endfor %}
     </div>
   </div>
