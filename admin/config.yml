@@ -81,6 +81,7 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", i18n: duplicate }
       - { label: "Image", name: " image", widget: "image", i18n: duplicate, required: false }
