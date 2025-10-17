@@ -7,7 +7,7 @@ category:
 tags:
   - "[cleanex"
   - web]
-" image": /assets/img/creadors.png
+image: /assets/img/creadors.png
 reading_time: 1
 order: 2
 ---

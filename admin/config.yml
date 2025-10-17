@@ -91,6 +91,6 @@ collections:
       - { label: "Image", name: "image", widget: "image", i18n: duplicate, required: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Language", name: "lang", widget: "hidden", default: "ca", i18n: "duplicate" }
-      - { label: Reading time (minutes)", name: "reading_time", widget: "number", i18n: duplicate, required: false }
+      - { label: "Reading time (minutes)", name: "reading_time", widget: "number", i18n: duplicate, required: false }
       - { label: "Comments enabled", name: "comments_enabled", widget: "boolean", default: false }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }

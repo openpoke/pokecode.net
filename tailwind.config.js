@@ -1,12 +1,22 @@
+const { gray } = require('@tailwindcss/typography/src/styles')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    './**/*.html'
+    './**/*.html','./**/*.md', './**/**/*.scss'
   ],
   darkMode: 'media',
   theme: {
     extend: {
+      colors: {
+        transparent: "transparent",
+        success: "#28A745",
+        alert: "#ED1C24",
+        warning: "#FFB703",
+        black: "#020203",
+        white: "#FFFFFF",
+        gray: "#606364"
+      },
       typography: {
         DEFAULT: {
           css: {

@@ -10,7 +10,7 @@ category:
 tags:
   - "[cleanex"
   - web]
-" image": /assets/img/creadors.webp
+image: /assets/img/creadors.webp
 draft: false
 reading_time: 1
 comments_enabled: false

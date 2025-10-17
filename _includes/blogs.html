@@ -6,16 +6,16 @@
       <h2>{% t home.blogs.title %}</h2>
       <p>{% t home.blogs.description %}</p>
     </header>
-    <div class="modul__content">
+    <div class="blogs__content col-span-full grid grid-cols-1 gap-4 my-[6.4rem] mx-auto w-full">
       {% for blog in blogs %}
-        <div class="card-blog">
-            <div class="card-blog__img">
-            <img src="{{ blog.image }}" alt="{{ blog.title }}" />
-            </div>
-            <div class="card-blog__content">
-            <h3 class="card-blog__date">{{ blog.date }}</h3>
-            <a href="{{ blog.url | relative_url }}" class="card-blog__title">{{ blog.title }}</a>
-            </div>
+        <div class="card-blog relative rounded-[0.8rem] isolate">
+          <div class="card-blog__img relative isolate flex justify-center overflow-hidden w-full h-full pt-[2.4rem] px-[2.4rem] pb-0">
+            <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" />
+          </div>
+          <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
+            <h3 class="card-blog__date text-lg text-gray">{{ blog.date | date: "%-d %b %Y" }}</h3>
+            <a href="{{ blog.url | relative_url }}" class="card-blog__title text-xl">{{ blog.title }}</a>
+          </div>
         </div>
       {% endfor %}
     </div>
