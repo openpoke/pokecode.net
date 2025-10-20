@@ -16,7 +16,14 @@ module.exports = {
         warning: "#FFB703",
         black: "#020203",
         white: "#FFFFFF",
-        gray: "#606364"
+        gray: {
+          DEFAULT: "#6B7280CC", // 80% opacity
+          2: "#3E4C5C",
+          3: "#E1E5EF",
+          4: "#242424",
+          5: "#F6F8FA",
+          6: "#D3D5D9"
+        },
       },
       typography: {
         DEFAULT: {
