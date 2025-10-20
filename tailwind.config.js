@@ -3,7 +3,8 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    './**/*.html','./**/*.md', './**/**/*.scss'
+    './**/*.html',
+    './**/**/*.html'
   ],
   darkMode: 'media',
   theme: {
@@ -41,6 +42,17 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+      xs: ["13px", "16px"],
+      sm: ["14px", "18px"],
+      md: ["16px", "20px"],
+      lg: ["18px", "23px"],
+      xl: ["20px", "25px"],
+      "2xl": ["24px", "30px"],
+      "3xl": ["32px", "40px"],
+      "4xl": ["36px", "45px"],
+      "5xl": ["48px", "60px"]
       },
     },
   },
