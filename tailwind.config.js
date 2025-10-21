@@ -16,6 +16,7 @@ module.exports = {
         warning: "#FFB703",
         black: "#020203",
         white: "#FFFFFF",
+        yellowpoke: "#FFE223",
         gray: {
           DEFAULT: "#6B7280CC", // 80% opacity
           2: "#3E4C5C",
