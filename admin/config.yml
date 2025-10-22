@@ -89,6 +89,6 @@ collections:
       - { label: "Categories", name: "category", widget: "list", i18n: true }
       - { label: "Tags", name: "tags", widget: "list", i18n: true, required: false }
       - { label: "Image", name: "image", widget: "image", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "hidden", default: "ca", i18n: true, required: true }
+      - { label: "Language", name: "lang", widget: "select", options: ["ca", "en", "es"], default: "ca", i18n: true }
       - { label: "Reading time (minutes)", name: "reading_time", widget: "number", i18n: duplicate, required: false }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }

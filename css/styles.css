@@ -1397,6 +1397,9 @@ a:active {
   font-family: var(--ff-secundary);
 }
 
+#blogs .modul__header {
+  grid-column: 2/-6;
+}
 .pellicules #seccio-pelis,
 .convidats #seccio-convidats {
   margin-top: 0 !important;
