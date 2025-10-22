@@ -12,7 +12,6 @@ description: "Developing Digital democracy and participation based on Decidim an
 theme-color: stone # indigo|yellow|pink|green|stone|
 
 languages: ["ca", "en", "es"]
-i18n_dir: "_i18n"
 exclude_from_localizations: ["assets", "docs"]
 
 # homepage information
