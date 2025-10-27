@@ -751,11 +751,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 226 35 / var(--tw-bg-opacity));
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
