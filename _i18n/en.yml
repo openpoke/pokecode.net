@@ -1,6 +1,9 @@
 ca: CA
 en: EN
 es: ES
+blog:
+  categories: Categories
+  recent_posts: Recent Articles
 pages:
   home: Home
   about: About 

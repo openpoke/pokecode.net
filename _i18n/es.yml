@@ -1,6 +1,9 @@
 ca: CA
 en: EN
 es: ES
+blog:
+  categories: Categorias
+  recent_posts: Artículos recientes
 pages:
   home: Inicio 
   about: Quienes somos 
