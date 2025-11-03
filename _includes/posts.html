@@ -1,10 +1,10 @@
-{% assign blogs = site.blogs | where: "lang", site.lang | sort: "order" %}
+{% assign blog = site.blog | where: "lang", site.lang | sort: "order" %}
 <section id="blog" class="modul equip">
   <!-- Contingut del modul -->
   <div class="modul__grid">
     <header class="modul__header">
-      <h2 class="">{% t home.blogs.title %}</h2>
-      <p>{% t home.blogs.description %}</p>
+      <h2 class="">{% t home.blog.title %}</h2>
+      <p>{% t home.blog.description %}</p>
     </header>
     <div id="slider-blogs" class="modul__content--slider">
       <!-- Add Arrows & Pagination -->
@@ -19,14 +19,14 @@
       </div>
       <!-- Cards -->
       <div class="cards swiper-wrapper">
-        {% for blog in blogs %}
+        {% for post  in blog %}
           <div class="card-blog swiper-slide relative rounded-[0.8rem] isolate">
             <div class="card-blog__img relative isolate flex justify-center overflow-hidden w-full h-full pt-[2.4rem] px-[2.4rem] pb-0">
-              <img class="object-cover block w-[90%] h-[90%]" src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" />
+              <img class="object-cover block w-[90%] h-[90%]" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
             </div>
             <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
-              <h3 class="card-blog__date text-xs text-gray">{{ blog.date | date: "%-d %b %Y" }}</h3>
-              <a href="{{ blog.url | relative_url }}" class="card-blog__title text-md">{{ blog.title }}</a>
+              <h3 class="card-blog__date text-xs text-gray">{{ post.date | date: "%-d %b %Y" }}</h3>
+              <a href="{{ post.url | relative_url }}" class="card-blog__title text-md">{{ post.title }}</a>
             </div>
           </div>
         {% endfor %}
