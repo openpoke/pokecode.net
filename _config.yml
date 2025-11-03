@@ -66,4 +66,6 @@ collections:
     output: false
   stories:
     output: false
+  blog:
+    output: true
 

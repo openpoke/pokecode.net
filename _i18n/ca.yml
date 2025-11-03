@@ -26,3 +26,6 @@ home:
   team:
     title: "Equip"
     description: "Per què darrera hi ha persones que t’ajudarem amb tot allò que necessites.<br><br> Mira la nostra <span class=\"destecat\">Pokecodex!</span>"
+  blog:
+    title: "Blog"
+    description: "Descobreix els nostres últims articles i notícies sobre tecnologia, participació ciutadana i desenvolupament digital."

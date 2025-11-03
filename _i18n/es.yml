@@ -26,3 +26,6 @@ home:
   team:
     title: "Equipo"
     description: Por que detrás hay personas que te ayudaremos en tot lo que necesites.<br><br> Mira nuestra <span class="destecat">Pokedex</span>!
+  blog:
+    title: "Blog"
+    description: "Descubre nuestros últimos artículos y noticias sobre tecnología, participación ciudadana y desarrollo digital."

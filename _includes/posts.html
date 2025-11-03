@@ -1,0 +1,74 @@
+{% assign blog = site.blog | where: "lang", site.lang | sort: "order" %}
+<section id="blog" class="modul equip">
+  <!-- Contingut del modul -->
+  <div class="modul__grid">
+    <header class="modul__header">
+      <h2 class="">{% t home.blog.title %}</h2>
+      <p>{% t home.blog.description %}</p>
+    </header>
+    <div id="slider-blogs" class="modul__content--slider">
+      <!-- Add Arrows & Pagination -->
+      <div class="swiper-navigation">
+        <div class="swiper-pagination md:!hidden"></div>
+        <div class="swiper-button-prev">
+          <span class="icon medium icon-arrow--left"></span><span class="icon small icon-arrow--left"></span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="icon medium icon-arrow--right"></span><span class="icon small icon-arrow--right"></span>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="cards swiper-wrapper">
+        {% for post  in blog %}
+          <div class="card-blog swiper-slide relative rounded-[0.8rem] isolate">
+            <div class="card-blog__img relative isolate flex justify-center overflow-hidden w-full h-full pt-[2.4rem] px-[2.4rem] pb-0">
+              <img class="object-cover block w-[90%] h-[90%]" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+            </div>
+            <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
+              <h3 class="card-blog__date text-xs text-gray">{{ post.date | date: "%-d %b %Y" }}</h3>
+              <a href="{{ post.url | relative_url }}" class="card-blog__title text-md">{{ post.title }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+window.addEventListener("load", () => {
+  const swiper = new Swiper("#slider-blogs", {
+    autoplay: false,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 32,
+      },
+    },
+  });
+});
+</script>

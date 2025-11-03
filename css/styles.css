@@ -1393,6 +1393,13 @@ a:active {
   font-size: var(--fs-24);
 }
 
+#blog .card-blog__content {
+  font-family: var(--ff-secundary);
+}
+
+#blog .modul__header {
+  grid-column: 2/-6;
+}
 .pellicules #seccio-pelis,
 .convidats #seccio-convidats {
   margin-top: 0 !important;
