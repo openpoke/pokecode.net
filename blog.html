@@ -29,8 +29,8 @@ layout: default
       {% if posts_found %}
       <li class="mb-2">
         <span class="text-lg font-bold text-gray-700">📰 {{ category | capitalize }}</span>
-        <ul class="mt-2 space-y-2">
-          {{ category_posts }}
+        <ul class="w-fit mt-2 space-y-2">
+          <li>{{ category_posts }}</li>
         </ul>
       </li>
       {% endif %}
@@ -54,7 +54,7 @@ layout: default
     {% if uncategorized_found %}
     <li class="mb-2">
       <ul class="mt-2 space-y-2">
-        {{ uncategorized_posts }}
+        <li>{{ uncategorized_posts }}</li>
       </ul>
     </li>
     {% endif %}
