@@ -2,7 +2,6 @@ ca: CA
 en: EN
 es: ES
 blog:
-  categories: Categories
   recent_posts: Articles recents
 pages:
   home: Inici

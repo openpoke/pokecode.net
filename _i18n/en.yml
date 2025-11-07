@@ -2,8 +2,7 @@ ca: CA
 en: EN
 es: ES
 blog:
-  categories: Categories
-  recent_posts: Recent Articles
+  recent_posts: Recent articles
 pages:
   home: Home
   about: About 

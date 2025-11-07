@@ -3,27 +3,61 @@ layout: default
 ---
 {% assign blog = site.blog | where: "lang", site.lang | sort: "order" %}
 {% assign categories = blog | map: "categories" | join: "," | split: "," | uniq %}
-<section class="flex flex-row justify-between gap-8 pt-[110px] w-full">
+{% assign posts_per_category = site.posts_per_category | default: 3 %}
+<section class="flex flex-row justify-between gap-4 pt-[110px] w-full">
   <!-- 📚 Sidebar -->
-  <aside class="hidden md:block md:basis-1/4 md:min-w-[480px] md:border-r md:border-gray-2 md:pl-8 md:bg-brownpoke">
-    <h3 class="text-2xl font-semibold mb-4">{% t blog.categories %}</h3>
-    <ul class="mb-8 space-y-2 text-lg leading-snug">
-    {% for category in categories %}
-        <li class="px-4 py-3 bg-black text-white text-sm rounded-full w-fit">
-        <a href="{{ site.baseurl }}/categories#{{ category | strip }}" class="hover:underline text-blue-700">
-            {{ category | capitalize }}
-        </a>
-        </li>
-    {% endfor %}
-    </ul>
-
-    <h3 class="text-2xl font-semibold mb-4">{% t blog.recent_posts %}</h3>
+  <aside class="hidden md:block md:basis-1/4 md:min-w-[450px] md:border-r md:border-gray-2 md:pl-8 md:bg-brownpoke">
+    <h3 class="text-2xl font-semibold my-4">{% t blog.recent_posts %}</h3>
     <ul class="space-y-4 text-lg leading-snug">
-    {% for post in blog limit:5 %}
-        <li>
-        <a href="{{ post.url }}" class="hover:underline text-blue-700">{{ post.title | truncate: 50 }}</a>
-        </li>
+
+    {% for category in categories %}
+      {% assign posts_found = false %}
+      {% assign i = 0 %}
+      {% capture category_posts %}
+        {% for post in blog %}
+          {% if post.categories contains category %}
+            {% assign posts_found = true %}
+            {% if i < posts_per_category %}
+              <li>
+                <a href="{{ post.url }}" class="hover:no-underline">{{ post.title | truncate: 50 }}</a>
+              </li>
+              {% assign i = i | plus: 1 %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endcapture %}
+      {% if posts_found %}
+      <li class="mb-2">
+        <span class="text-lg font-bold text-gray-700">📰 {{ category | capitalize }}</span>
+        <ul class="mt-2 space-y-2">
+          {{ category_posts }}
+        </ul>
+      </li>
+      {% endif %}
     {% endfor %}
+
+    {% assign uncategorized_found = false %}
+    {% assign i = 0 %}
+    {% capture uncategorized_posts %}
+      {% for post in blog %}
+        {% if post.categories.size == 0 %}
+          {% assign uncategorized_found = true %}
+          {% if i < posts_per_category %}
+            <li>
+              <a href="{{ post.url }}" class="hover:no-underline">{{ post.title | truncate: 50 }}</a>
+            </li>
+            {% assign i = i | plus: 1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+    {% if uncategorized_found %}
+    <li class="mb-2">
+      <ul class="mt-2 space-y-2">
+        {{ uncategorized_posts }}
+      </ul>
+    </li>
+    {% endif %}
     </ul>
   </aside>
 
