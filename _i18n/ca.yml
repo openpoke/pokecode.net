@@ -1,6 +1,8 @@
 ca: CA
 en: EN
 es: ES
+blog:
+  recent_posts: Articles recents
 pages:
   home: Inici
   about: Qui som
