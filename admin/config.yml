@@ -37,7 +37,7 @@ collections:
       - { label: "Avatar", name: "avatar", widget: "image", i18n: duplicate }
       - { label: "Image", name: "image", widget: "image", i18n: duplicate }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+      - { label: "Language", name: "locale", widget: "hidden", i18n: "duplicate" }
   - name: "clients"
     label: "Clients"
     folder: "_clients"
@@ -48,7 +48,7 @@ collections:
       - { label: "Alt Text", name: "alt", widget: "string", i18n: duplicate }
       - { label: "Url", name: "url", widget: "string", i18n: duplicate }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+      - { label: "Language", name: "locale", widget: "hidden", i18n: "duplicate" }
   - name: "stories"
     label: "Client Stories"
     folder: "_stories"
@@ -62,7 +62,7 @@ collections:
       - { label: "Logo", name: "logo", widget: "image", i18n: duplicate, required: false }
       - { label: "Testimonial", name: "testimonial", widget: "markdown", i18n: true }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+      - { label: "Language", name: "locale", widget: "hidden", i18n: "duplicate" }
   - name: "services"
     label: "Services"
     folder: "_services"
@@ -73,7 +73,7 @@ collections:
       - { label: "Image", name: "image", widget: "image", i18n: duplicate }
       - { label: "Description", name: "description", widget: "text", i18n: true }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "hidden", i18n: "duplicate" }
+      - { label: "Language", name: "locale", widget: "hidden", i18n: "duplicate" }
   - name: "blog"
     label: "Blog Posts"
     folder: "_blog"
@@ -82,6 +82,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog", i18n: true }
       - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
       - { label: "Subtitle", name: "subtitle", widget: "string", i18n: true, required: false }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
       - { label: "Author", name: "author", widget: "string", i18n: duplicate }
@@ -89,6 +90,6 @@ collections:
       - { label: "Categories", name: "category", widget: "list", i18n: true }
       - { label: "Tags", name: "tags", widget: "list", i18n: true, required: false }
       - { label: "Image", name: "image", widget: "image", i18n: duplicate }
-      - { label: "Language", name: "lang", widget: "select", options: ["ca", "en", "es"], default: "ca", i18n: true }
+      - { label: "Language", name: "locale", widget: "select", options: ["ca", "en", "es"], default: "ca", i18n: true }
       - { label: "Reading time (minutes)", name: "reading_time", widget: "number", i18n: duplicate, required: false }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
