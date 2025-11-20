@@ -12,8 +12,10 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 4.4'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll_custom_permalink', '~> 0.0'
   gem 'jekyll-multiple-languages-plugin'
   gem 'jekyll-postcss-v2'
+  gem 'jekyll-redirect-from'
   gem 'jekyll-seo-tag'
 end
 

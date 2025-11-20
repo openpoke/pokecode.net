@@ -4,7 +4,7 @@ position: "Getxo Town Hall"
 organization: "Getxo Town Hall"
 image: "/assets/img/clients/getxo_color.svg"
 order: 1
-lang: en
+locale: en
 testimonial: |
   It will soon be the second anniversary since Getxo City Council joined the Decidim universe, creating its participation site [www.zeugaz.getxo.eus](https://zeugaz.getxo.eus/). From the very beginning, before even launching the platform, Ivan and Pau were our Jedi Masters, and we were their humble padawans. Always friendly, attentive, available, and precise, they guided us through an unfamiliar path.  
 

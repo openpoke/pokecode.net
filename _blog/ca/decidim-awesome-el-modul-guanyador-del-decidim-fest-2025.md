@@ -1,6 +1,8 @@
 ---
 layout: blog
-title: 🏆 Decidim Awesome, el mòdul guanyador del Decidim Fest 2025!!
+title: 🏆 Decidim Awesome, el mòdul guanyador del Decidim Fest 2025!
+slug: decidim-awesome-el-modul-guanyador-del-decidim-fest-2025
+subtitle: És aquest el millor modul?
 author: Pau Parals
 date: 2025-11-13T18:12:00.000+01:00
 category:
@@ -11,7 +13,7 @@ tags:
   - Modules
   - Awesome
 image: /assets/img/jba-6406.jpg
-lang: ca
+locale: ca
 order: 1
 ---
 A Pokecode estem molt contents d’anunciar que Decidim Awesome ha estat reconegut com el mòdul guanyador del Decidim Fest 2025! 🎉 Aquest reconeixement és molt especial per a nosaltres, ja que **som els creadors, desenvolupadors i mantenidors de Decidim Awesome** des del primer commit que es va fer el 2020. 

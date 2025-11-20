@@ -2,7 +2,7 @@
 layout: page
 title: "Legal Notice"
 slug: legal_notice
-permalink: /legal_notice/
+permalink: /legal_notice
 ---
 # Legal Notice
 

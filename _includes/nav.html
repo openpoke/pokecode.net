@@ -1,3 +1,7 @@
+{% assign en_url = page.url | replace_first: '/es', '/en' | replace_first: '/ca', '/en' %}
+{% assign es_url = page.url | replace_first: '/en', '/es' | replace_first: '/ca', '/es' %}
+{% assign ca_url = page.url | replace_first: '/es', '/ca' | replace_first: '/en', '/ca' %}
+
 <nav id="site-navigation" class="main-navigation">
   <!-- Boto Burger -->
   <button class="btn-burger menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -29,13 +33,13 @@
         <span>{% t site.lang %}</span>
         <ul class="dropdown-menu">
           <li>
-            <a href="/ca">{% t ca %}</a>
+            <a href="{{ ca_url }}">{% t ca %}</a>
           </li>
           <li>
-            <a href="/es">{% t es %}</a>
+            <a href="{{ es_url }}">{% t es %}</a>
           </li>
           <li>
-            <a href="/en">{%t en %}</a>
+            <a href="{{ en_url }}">{%t en %}</a>
           </li>
         </ul>
       </li>
