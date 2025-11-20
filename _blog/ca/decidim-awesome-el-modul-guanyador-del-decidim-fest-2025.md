@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 🏆 Decidim Awesome, el mòdul guanyador del Decidim Fest 2025!
+title: 🏆 Decidim Awesome, el mòdul guanyador del Decidim Fest 2025!!
 author: Pau Parals
 date: 2025-11-13T18:12:00.000+01:00
 category:
