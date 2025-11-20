@@ -2,6 +2,7 @@
 layout: blog
 title: 🏆 Decidim Awesome, the winning module of Decidim Fest 2025!
 slug: decidim-awesome-el-modul-guanyador-del-decidim-fest-2025
+subtitle: Is this the best module?
 author: Pau Parals
 category:
   - DecidimAwesome
