@@ -1,4 +1,4 @@
-{% assign services = site.services | where: "lang", site.lang | sort: "order" %}
+{% assign services = site.services | where: "locale", site.lang | sort: "order" %}
 {% assign team = site.team | where: "locale", site.lang | sort: "order" %}
 <section id="serveis" class="modul serveis">
   <!-- Contingut del modul -->

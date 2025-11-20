@@ -5,7 +5,7 @@ organization: Green Party Canada
 image: /assets/img/clients/green_color.svg
 logo: /assets/img/clients/green_color.svg
 order: 4
-lang: ca
+locale: ca
 testimonial: |
   Com a responsable de producte en telecomunicacions, he gestionat el desenvolupament de programari per
   part d'equips als Estats Units, el Regne Unit, Alemanya, Israel i la Xina. Pokecode sempre compleix o
