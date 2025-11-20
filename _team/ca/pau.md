@@ -3,7 +3,7 @@ name: Pau Parals
 position: Cofundador
 level: LV3
 twitter: https://twitter.com/paarals
-github: null
+github: https://github.com/paarals
 avatar: /assets/img/avatar_pau.webp
 order: 2
 locale: ca
