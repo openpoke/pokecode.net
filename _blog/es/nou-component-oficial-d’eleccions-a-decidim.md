@@ -1,7 +1,9 @@
 ---
 layout: blog
 title: 🗳️ Nuevo componente oficial de Elecciones en Decidim
-subtitle: ¡A partir de la versión 0.31, ya puedes realizar tus asambleas digitales y/o elecciones!
+slug: nou-component-oficial-eleccions-a-decidim
+subtitle: ¡A partir de la versión 0.31, ya puedes realizar tus asambleas
+  digitales y/o elecciones!
 author: Pau Parals
 category:
   - Modules

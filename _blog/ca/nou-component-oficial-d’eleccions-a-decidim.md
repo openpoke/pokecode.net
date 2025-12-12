@@ -2,7 +2,8 @@
 layout: blog
 title: 🗳️ Nou component oficial d’Eleccions a Decidim
 slug: nou-component-oficial-eleccions-a-decidim
-subtitle: A partir de la versió 0.31, ja pots fer les teves assemblees digitals i/o eleccions!
+subtitle: A partir de la versió 0.31, ja pots fer les teves assemblees digitals
+  i/o eleccions!
 author: Pau Parals
 date: 2025-12-12T13:17:00.000+01:00
 category:
