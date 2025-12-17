@@ -13,8 +13,8 @@ tags:
   - Awesome
 image: /assets/img/jba-6406.jpg
 locale: en
-reading_time: null
-order: 1
+reading_time: 3
+order: 3
 ---
 At Pokecode, we are very happy to announce that Decidim Awesome has been recognized as the winning module of the Decidim Fest 2025! 🎉 This recognition is very special to us, **as we are the creators, developers, and maintainers of Decidim Awesome** since the very first commit back in 2020.
 

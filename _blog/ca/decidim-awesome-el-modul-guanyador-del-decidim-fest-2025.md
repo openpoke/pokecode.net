@@ -14,7 +14,8 @@ tags:
   - Awesome
 image: /assets/img/jba-6406.jpg
 locale: ca
-order: 1
+reading_time: 3
+order: 3
 ---
 A Pokecode estem molt contents d’anunciar que Decidim Awesome ha estat reconegut com el mòdul guanyador del Decidim Fest 2025! 🎉 Aquest reconeixement és molt especial per a nosaltres, ja que **som els creadors, desenvolupadors i mantenidors de Decidim Awesome** des del primer commit que es va fer el 2020. 
 
