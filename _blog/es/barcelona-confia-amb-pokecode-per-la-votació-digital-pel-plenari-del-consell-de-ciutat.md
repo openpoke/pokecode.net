@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Barcelona confía en Pokecode para la votación digital del Pleno del
+title: 🤳​ Barcelona confía en Pokecode para la votación digital del Pleno del
   Consejo de Ciudad
 slug: barcelona-escull-pokecode-votacio-digital-consell-ciutat
 subtitle: El Ayuntamiento ha llevado a cabo la votación de los dictámenes de la

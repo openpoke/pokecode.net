@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Barcelona trusts Pokecode for the digital voting of the highest
+title: 🤳​ Barcelona trusts Pokecode for the digital voting of the highest
   participatory body in the City Council
 slug: barcelona-escull-pokecode-votacio-digital-consell-ciutat
 subtitle: The City Council conducted the voting on the resolutions of the
