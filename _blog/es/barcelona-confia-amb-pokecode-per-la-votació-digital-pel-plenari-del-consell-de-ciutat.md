@@ -14,7 +14,7 @@ tags:
 image: /assets/img/captura-de-pantalla-de-2025-12-17-10-19-14.png
 locale: es
 reading_time: 2
-order: 3
+order: 1
 ---
 En la sesión del Consejo de Ciudad del mes de diciembre de 2025, el Ayuntamiento de Barcelona ha escogido Pokecode para llevar a cabo la votación digital de los dictámenes. La votación se realizó utilizando el [nuevo componente oficial de Elecciones ](https://pokecode.net/blog/es/nou-component-oficial-d%E2%80%99eleccions-a-decidim.html)de Decidim, disponible a partir de la versión 0.31.
 

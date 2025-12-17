@@ -13,7 +13,7 @@ tags:
 image: /assets/img/captura-de-pantalla-de-2025-12-17-10-19-14.png
 locale: en
 reading_time: 2
-order: 3
+order: 1
 ---
 In the December 2025 session of the City Council, Barcelona City Council chose Pokecode to carry out the digital voting of the resolutions. The vote was conducted using the [new official Elections component](https://pokecode.net/blog/en/nou-component-oficial-d%E2%80%99eleccions-a-decidim.html) of Decidim, available from version 0.31 onwards.
 

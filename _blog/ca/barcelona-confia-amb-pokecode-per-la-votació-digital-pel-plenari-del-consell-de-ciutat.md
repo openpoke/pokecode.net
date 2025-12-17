@@ -14,7 +14,7 @@ tags:
 image: /assets/img/captura-de-pantalla-de-2025-12-17-10-19-14.png
 locale: ca
 reading_time: 2
-order: 3
+order: 1
 ---
 En la sessió del Consell de Ciutat del desembre de 2025, l’Ajuntament de Barcelona ha escollit Pokecode per dur a terme la votació digital dels dictàmens. La votació s’ha realitzat utilitzant el [nou component oficial d’eleccions](https://pokecode.net/blog/ca/nou-component-oficial-d%E2%80%99eleccions-a-decidim.html) de Decidim, disponible a partir de la versió 0.31. 
 
