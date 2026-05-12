@@ -1,6 +1,12 @@
-{% assign en_url = page.url | replace_first: '/es', '/en' | replace_first: '/ca', '/en' %}
-{% assign es_url = page.url | replace_first: '/en', '/es' | replace_first: '/ca', '/es' %}
-{% assign ca_url = page.url | replace_first: '/es', '/ca' | replace_first: '/en', '/ca' %}
+{% assign ca_url = page.url %}
+{% assign en_url = '/en' | append: page.url %}
+{% assign es_url = '/es' | append: page.url %}
+
+{% case site.lang %}
+  {% when 'en' %}{% assign lang_home = '/en' %}
+  {% when 'es' %}{% assign lang_home = '/es' %}
+  {% else %}{% assign lang_home = '' %}
+{% endcase %}
 
 <nav id="site-navigation" class="main-navigation">
   <!-- Boto Burger -->
@@ -12,19 +18,19 @@
     <!-- Menú -->
     <ul id="primary-menu" class="navbar-nav nav-menu">
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="/#serveis" class="nav-link">{% t home.services.title %}</a>
+        <a href="{{ lang_home }}/#serveis" class="nav-link">{% t home.services.title %}</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="/#clients" class="nav-link">{% t home.clients.title %}</a>
+        <a href="{{ lang_home }}/#clients" class="nav-link">{% t home.clients.title %}</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="/#equip" class="nav-link">{% t home.team.title %}</a>
+        <a href="{{ lang_home }}/#equip" class="nav-link">{% t home.team.title %}</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="/#blog" class="nav-link">{% t home.blog.title %}</a>
+        <a href="{{ lang_home }}/#blog" class="nav-link">{% t home.blog.title %}</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="/#contacte" class="nav-link">Contact</a>
+        <a href="{{ lang_home }}/#contacte" class="nav-link">Contact</a>
       </li>
     </ul>
     <!-- Idiome -->
