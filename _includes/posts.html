@@ -73,9 +73,8 @@ window.addEventListener("load", () => {
 
   const hash = window.location.hash;
   if (hash) {
-    const target = document.querySelector(hash);
+    const target = document.getElementById(hash.slice(1));
     if (target) {
-      // Small delay to let Swiper finish layout
       setTimeout(() => {
         target.scrollIntoView({ behavior: "smooth" });
       }, 50);

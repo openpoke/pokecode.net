@@ -1,6 +1,7 @@
-{% assign ca_url = page.url %}
-{% assign en_url = '/en' | append: page.url %}
-{% assign es_url = '/es' | append: page.url %}
+{% assign base_url = page.url | remove_first: '/en' | remove_first: '/es' %}
+{% assign ca_url = base_url %}
+{% assign en_url = '/en' | append: base_url %}
+{% assign es_url = '/es' | append: base_url %}
 
 {% case site.lang %}
   {% when 'en' %}{% assign lang_home = '/en' %}
