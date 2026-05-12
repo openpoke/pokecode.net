@@ -1,6 +1,13 @@
-{% assign base_url = page.url | remove_first: '/en' | remove_first: '/es' %}
+{% assign base_url = page.url %}
+{% assign url_start = page.url | slice: 0, 4 %}
+{% if url_start == '/en/' %}
+  {% assign base_url = page.url | slice: 3, 9999 %}
+{% elsif url_start == '/es/' %}
+  {% assign base_url = page.url | slice: 3, 9999 %}
+{% endif %}
 {% assign ca_url = base_url %}
 {% assign en_url = '/en' | append: base_url %}
+{% assign es_url = '/es' | append: base_url %}
 {% assign es_url = '/es' | append: base_url %}
 
 {% case site.lang %}
@@ -31,7 +38,7 @@
         <a href="{{ lang_home }}/#blog" class="nav-link">{% t home.blog.title %}</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-        <a href="{{ lang_home }}/#contacte" class="nav-link">Contact</a>
+        <a href="/#contacte" class="nav-link">{% t home.contact.title %}</a>
       </li>
     </ul>
     <!-- Idiome -->
