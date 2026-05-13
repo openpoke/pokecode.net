@@ -44,7 +44,7 @@
       <header id="masthead" class="site-header">
         <!-- Logo -->
         <div class="site-branding">
-          <a href="/">
+          <a href="{% if site.lang == 'en' %}/en/{% elsif site.lang == 'es' %}/es/{% else %}/{% endif %}">
             <div id="logo"><span class="icon icon-pokecode"></span></div>
           </a>
         </div>
