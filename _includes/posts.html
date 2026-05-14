@@ -26,7 +26,15 @@
             </div>
             <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
               <h3 class="card-blog__date text-xs text-gray">{{ post.date | date: "%-d %b %Y" }}</h3>
-              <a href="{{ post.url | relative_url }}" class="card-blog__title text-md">{{ post.title }}</a>
+              {% assign post_filename = post.url | split: '/' | last %}
+              {% if site.lang == 'en' %}
+                {% assign post_url = '/en/blog/en/' | append: post_filename %}
+              {% elsif site.lang == 'es' %}
+                {% assign post_url = '/es/blog/es/' | append: post_filename %}
+              {% else %}
+                {% assign post_url = '/blog/ca/' | append: post_filename %}
+              {% endif %}
+              <a href="{{ post_url }}" class="card-blog__title text-md">{{ post.title }}</a>
             </div>
           </div>
         {% endfor %}

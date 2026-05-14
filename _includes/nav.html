@@ -5,10 +5,24 @@
 {% elsif url_start == '/es/' %}
   {% assign base_url = page.url | slice: 3, 9999 %}
 {% endif %}
-{% assign ca_url = base_url %}
-{% assign en_url = '/en' | append: base_url %}
-{% assign es_url = '/es' | append: base_url %}
-{% assign es_url = '/es' | append: base_url %}
+
+{% if base_url contains '/blog/ca/' %}
+  {% assign ca_url = base_url %}
+  {% assign en_url = '/en' | append: base_url | replace: '/blog/ca/', '/blog/en/' %}
+  {% assign es_url = '/es' | append: base_url | replace: '/blog/ca/', '/blog/es/' %}
+{% elsif base_url contains '/blog/en/' %}
+  {% assign ca_url = base_url | replace: '/blog/en/', '/blog/ca/' %}
+  {% assign en_url = '/en' | append: base_url %}
+  {% assign es_url = '/es' | append: base_url | replace: '/blog/en/', '/blog/es/' %}
+{% elsif base_url contains '/blog/es/' %}
+  {% assign ca_url = base_url | replace: '/blog/es/', '/blog/ca/' %}
+  {% assign en_url = '/en' | append: base_url | replace: '/blog/es/', '/blog/en/' %}
+  {% assign es_url = '/es' | append: base_url %}
+{% else %}
+  {% assign ca_url = base_url %}
+  {% assign en_url = '/en' | append: base_url %}
+  {% assign es_url = '/es' | append: base_url %}
+{% endif %}
 
 {% case site.lang %}
   {% when 'en' %}{% assign lang_home = '/en' %}
