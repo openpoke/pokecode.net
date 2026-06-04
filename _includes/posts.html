@@ -21,11 +21,6 @@
       <div class="cards swiper-wrapper">
         {% for post  in blog %}
           <div class="card-blog swiper-slide relative rounded-[0.8rem] isolate">
-            <div class="card-blog__img relative isolate flex justify-center overflow-hidden w-full h-full pt-[2.4rem] px-[2.4rem] pb-0">
-              <img class="object-cover block w-[90%] h-[90%]" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
-            </div>
-            <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
-              <h3 class="card-blog__date text-xs text-gray">{{ post.date | date: "%-d %b %Y" }}</h3>
               {% assign post_filename = post.url | split: '/' | last %}
               {% if site.lang == 'en' %}
                 {% assign post_url = '/en/blog/en/' | append: post_filename %}
@@ -34,6 +29,13 @@
               {% else %}
                 {% assign post_url = '/blog/ca/' | append: post_filename %}
               {% endif %}
+            <div class="card-blog__img relative isolate flex justify-center overflow-hidden w-full h-full pt-[2.4rem] px-[2.4rem] pb-0">
+              <a href="{{ post_url }}">
+                <img class="object-cover block w-[90%] h-[90%]" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+              </a>
+            </div>
+            <div class="card-blog__content relative p-[2.4rem] pb-[1.6rem] bg-[var(--c-bg-card)] rounded-b-[0.8rem] min-h-[14.2rem]">
+              <h3 class="card-blog__date text-xs text-gray">{{ post.date | date: "%-d %b %Y" }}</h3>
               <a href="{{ post_url }}" class="card-blog__title text-md">{{ post.title }}</a>
             </div>
           </div>

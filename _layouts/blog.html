@@ -66,4 +66,16 @@ layout: default
   header#masthead.site-header {
     background-color: #FFE223;
   }
+
+  #pagina-blogs article {
+    max-width: none;
+    width: 100%;
+  }
+
+  @media (max-width: 539px) {
+    #pagina-blogs article pre {
+      max-width: calc(100vw - 8vw - 32px);
+      overflow-x: auto;
+    }
+  }
 </style>
