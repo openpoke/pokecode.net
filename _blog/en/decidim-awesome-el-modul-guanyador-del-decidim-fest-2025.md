@@ -4,6 +4,7 @@ title: 🏆 Decidim Awesome, the winning module of Decidim Fest 2025!
 slug: decidim-awesome-el-modul-guanyador-del-decidim-fest-2025
 subtitle: Is this the best module?
 author: Pau Parals
+date: 2025-11-13T18:12:00.000+01:00
 category:
   - DecidimAwesome
   - DecidimFest
@@ -14,7 +15,7 @@ tags:
 image: /assets/img/jba-6406.jpg
 locale: en
 reading_time: 3
-order: 3
+order: 4
 ---
 At Pokecode, we are very happy to announce that Decidim Awesome has been recognized as the winning module of the Decidim Fest 2025! 🎉 This recognition is very special to us, **as we are the creators, developers, and maintainers of Decidim Awesome** since the very first commit back in 2020.
 

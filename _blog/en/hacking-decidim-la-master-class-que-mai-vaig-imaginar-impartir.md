@@ -9,7 +9,7 @@ tags:
 image: /assets/img/pokecode_decidim.jpg
 locale: en
 reading_time: 5
-order: 5
+order: 1
 ---
 If you ask me how things are going at work, I could sum it up with a simple expression: *so far, so good*.
 

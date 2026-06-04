@@ -5,6 +5,7 @@ slug: nou-component-oficial-eleccions-a-decidim
 subtitle: ¡A partir de la versión 0.31, ya puedes realizar tus asambleas
   digitales y/o elecciones!
 author: Pau Parals
+date: 2025-12-12T13:17:00.000+01:00
 category:
   - Modules
 tags:
@@ -12,7 +13,7 @@ tags:
 image: /assets/img/elections_decidimfest25-2.jpg
 locale: es
 reading_time: 3
-order: 2
+order: 3
 ---
 En Pokecode estamos muy contentos de anunciar que ya está disponible el nuevo componente oficial de [elecciones](https://docs.decidim.org/en/develop/develop/elections.html) para Decidim 0.31, un desarrollo clave que hemos construido conjuntamente con la Asociación Decidim y con la cofinanciación de Catalunya en Comú y las cooperativas Som Energia y Som Connexió.
 

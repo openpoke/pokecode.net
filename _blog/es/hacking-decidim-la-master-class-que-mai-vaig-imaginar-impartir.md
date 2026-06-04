@@ -9,7 +9,7 @@ tags:
 image: /assets/img/pokecode_decidim.jpg
 locale: es
 reading_time: 5
-order: 5
+order: 1
 ---
 Si me preguntas cómo están yendo las cosas en mi trabajo, podría resumirlo con una expresión sencilla: *so far, so good*.
 

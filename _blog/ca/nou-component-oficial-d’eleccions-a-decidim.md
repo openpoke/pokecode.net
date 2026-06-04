@@ -13,7 +13,7 @@ tags:
 image: /assets/img/elections_decidimfest25-2.jpg
 locale: ca
 reading_time: 3
-order: 2
+order: 3
 ---
 A Pokecode estem molt contents d’anunciar que ja està disponible el nou component oficial d’[eleccions](https://docs.decidim.org/en/develop/develop/elections.html) per a Decidim 0.31, un desenvolupament clau que hem construït conjuntament amb la Associació Decidim i amb el co-finançament de Catalunya en Comú i les cooperatives Som Energia i Som Connexió.
 

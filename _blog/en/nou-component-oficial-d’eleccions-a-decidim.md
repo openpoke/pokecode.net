@@ -5,6 +5,7 @@ slug: nou-component-oficial-eleccions-a-decidim
 subtitle: Starting with version 0.31, you can now hold your digital assemblies
   and/or elections!
 author: Pau Parals
+date: 2025-12-12T13:17:00.000+01:00
 category:
   - Modules
 tags:
@@ -12,7 +13,7 @@ tags:
 image: /assets/img/elections_decidimfest25-2.jpg
 locale: en
 reading_time: 3
-order: 2
+order: 3
 ---
 At Pokecode, we are very pleased to announce that the new official [elections](https://docs.decidim.org/en/develop/develop/elections.html) component for Decidim 0.31 is now available. This is a key development that we have built together with the Decidim Association and with the co-financing of Catalunya en Comú and the cooperatives Som Energia and Som Connexió.
 

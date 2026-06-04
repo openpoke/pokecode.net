@@ -3,14 +3,14 @@ layout: blog
 title: "🎭 Hacking Decidim: la master class que mai vaig imaginar impartir"
 slug: hacking_decidim
 author: Elvia Benedith
-date: 2026-06-04T10:05:00.000+02:00
+date: 2026-06-04T23:27:00.000+02:00
 tags:
   - HackingDecidim
   - FemCodersClub
 image: /assets/img/pokecode_decidim.jpg
 locale: ca
 reading_time: 5
-order: 5
+order: 1
 ---
 Si em preguntes com van les coses a la feina, podria resumir-ho amb una expressió senzilla: *so far, so good*.
 
