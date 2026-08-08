@@ -1,2 +1,0 @@
-# pokecode
-web de pokecode
