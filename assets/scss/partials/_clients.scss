@@ -76,7 +76,11 @@
 			justify-items: center;
 
 			img {
+				width: 100%;
 				max-width: 75%;
+				aspect-ratio: 3/2;
+				-o-object-fit: contain;
+				object-fit: contain;
 			}
 			@media (max-width: $bp-mobile-big) {
 				flex-direction: row;
