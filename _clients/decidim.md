@@ -2,6 +2,7 @@
 name: "Decidim"
 image: "/assets/img/clients/decidim.svg"
 alt: "Decidim"
-order: 8
+link: https://decidim.org/
+order: 5
 ---
 

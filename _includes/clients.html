@@ -19,11 +19,14 @@ We collaborate with <span class="destecat--negatiu">public institutions</span>,
     <div class="clients__logos">
       <div class="clients__logos__container">
         {% for client in clients %}
+        {% if client.link %}<a href="{{ client.link }}" target="_blank" rel="noopener" style="display: contents">{% endif %}
         <img
+          {% if client.color %}class="clients__logo--color"{% endif %}
           src="{{ client.image }}"
           title="{{ client.name }}"
           alt="{{ client.alt }}"
         />
+        {% if client.link %}</a>{% endif %}
         {% endfor %}
      </div>
     </div>
