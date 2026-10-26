@@ -81,6 +81,11 @@
 				aspect-ratio: 3/2;
 				-o-object-fit: contain;
 				object-fit: contain;
+
+				// Logos en color: se pasan a negro
+				&.clients__logo--color {
+					filter: grayscale(1) brightness(0.55) contrast(20);
+				}
 			}
 			@media (max-width: $bp-mobile-big) {
 				flex-direction: row;

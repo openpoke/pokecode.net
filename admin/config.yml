@@ -47,6 +47,7 @@ collections:
       - { label: "Image", name: "image", widget: "image", i18n: duplicate  }
       - { label: "Alt Text", name: "alt", widget: "string", i18n: duplicate }
       - { label: "Url", name: "link", widget: "string", i18n: duplicate, required: false }
+      - { label: "Logo en color (se muestra en negro)", name: "color", widget: "boolean", i18n: duplicate, required: false, default: false }
       - { label: "Order", name: order, widget: "number", i18n: duplicate }
       - { label: "Language", name: "locale", widget: "hidden", i18n: "duplicate" }
   - name: "stories"

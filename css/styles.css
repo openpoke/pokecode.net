@@ -1066,6 +1066,9 @@ a:active {
   -o-object-fit: contain;
   object-fit: contain;
 }
+#clients .clients__logos__container img.clients__logo--color {
+  filter: grayscale(1) brightness(0.55) contrast(20);
+}
 @media (max-width: 812px) {
   #clients .clients__logos__container {
     flex-direction: row;
