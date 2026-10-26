@@ -6,7 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 // 1. Fer aparèixer els mòduls a mesura que el "Scroll" baixa
 
-var modulsGrid = document.querySelectorAll(".modul__grid");
+// El footer queda fora: en pantalles molt altes el seu "top 85%" mai s'arriba a assolir i es quedaria amb opacity 0
+var modulsGrid = document.querySelectorAll(".modul__grid:not(.footer .modul__grid)");
 
 modulsGrid.forEach((item, i) => {
 	gsap.from(item, {
